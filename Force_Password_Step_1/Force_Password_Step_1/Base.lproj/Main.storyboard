@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="P3f-Rk-Bgv">
             <objects>
-                <viewController id="66G-6U-ziW" sceneMemberID="viewController">
+                <viewController id="66G-6U-ziW" customClass="ViewController" customModule="Force_Password_Step_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4eb-G2-bJo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,8 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FqZ-ls-fYr" kind="show" id="v0a-pS-HPg"/>
+                                    <action selector="StartExperiment_Func_StartExperiment_Button:" destination="66G-6U-ziW" eventType="touchUpInside" id="THF-ny-YIM"/>
+                                    <segue destination="FqZ-ls-fYr" kind="show" identifier="Main_to_Experiment" id="v0a-pS-HPg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="유지 시간 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAi-d6-GdX">
@@ -70,15 +71,21 @@
                         <viewLayoutGuide key="safeArea" id="oMA-tU-lQh"/>
                     </view>
                     <navigationItem key="navigationItem" id="uTS-G3-lX9"/>
+                    <connections>
+                        <outlet property="InputCount_TextField" destination="Z4B-47-adb" id="JV0-y2-Nhq"/>
+                        <outlet property="StartExperiment_Button" destination="cMc-Hu-Yvy" id="Kpe-mM-egN"/>
+                        <outlet property="StayTime_TextField" destination="zvo-W7-OuG" id="cFg-DJ-rdh"/>
+                        <outlet property="SubjectName_TextField" destination="vRI-XY-g44" id="ubj-Ne-Q3v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qBz-kZ-o7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="285.60000000000002" y="-69.458128078817737"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="MgR-y6-gLB">
             <objects>
-                <viewController id="FqZ-ls-fYr" sceneMemberID="viewController">
+                <viewController id="FqZ-ls-fYr" customClass="ViewController2" customModule="Force_Password_Step_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="slS-NQ-E6k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,6 +233,13 @@
                         <viewLayoutGuide key="safeArea" id="9LU-fP-qjO"/>
                     </view>
                     <navigationItem key="navigationItem" id="BIE-bQ-Obs"/>
+                    <connections>
+                        <outlet property="CurrentInputCount_Label" destination="0AM-zO-uGC" id="6og-37-0wp"/>
+                        <outlet property="One_Button" destination="Dsh-96-kyO" id="57s-ZX-lOo"/>
+                        <outlet property="PreviousInputCount_Label" destination="tIk-i5-RW3" id="1On-gX-f5t"/>
+                        <outlet property="PreviousStayTime_Label" destination="BHZ-if-B7V" id="0RC-nt-3v5"/>
+                        <outlet property="Two_Button" destination="Xee-qx-0Tl" id="Duz-Rt-cD7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23P-2t-p9Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
