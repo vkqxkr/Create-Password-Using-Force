@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88D0803423B9042E00A95752 /* OneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0803323B9042E00A95752 /* OneButton.swift */; };
+		88D0803623B904B300A95752 /* TwoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0803523B904B300A95752 /* TwoButton.swift */; };
+		88D0803823B904CC00A95752 /* ThreeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0803723B904CC00A95752 /* ThreeButton.swift */; };
+		88D0803A23B904F600A95752 /* FourButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0803923B904F600A95752 /* FourButton.swift */; };
+		88D0803C23B9055D00A95752 /* FiveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0803B23B9055D00A95752 /* FiveButton.swift */; };
+		88D0803E23B9057900A95752 /* SixButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0803D23B9057900A95752 /* SixButton.swift */; };
+		88D0804023B9059100A95752 /* SevenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0803F23B9059100A95752 /* SevenButton.swift */; };
+		88D0804223B905A800A95752 /* EightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0804123B905A800A95752 /* EightButton.swift */; };
+		88D0804423B905BA00A95752 /* NineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0804323B905BA00A95752 /* NineButton.swift */; };
+		88D0804623B905D800A95752 /* StarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0804523B905D800A95752 /* StarButton.swift */; };
+		88D0804823B905F200A95752 /* ZeroButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0804723B905F200A95752 /* ZeroButton.swift */; };
+		88D0804A23B9060400A95752 /* SharpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0804923B9060400A95752 /* SharpButton.swift */; };
 		88D3D34A23B59322009002E8 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3D34923B59322009002E8 /* ViewController2.swift */; };
-		88D3D34C23B5A3F7009002E8 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3D34B23B5A3F7009002E8 /* Button.swift */; };
 		88DC04CD23B4A45100353D2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC04CC23B4A45100353D2C /* AppDelegate.swift */; };
 		88DC04CF23B4A45100353D2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC04CE23B4A45100353D2C /* SceneDelegate.swift */; };
 		88DC04D123B4A45100353D2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC04D023B4A45100353D2C /* ViewController.swift */; };
@@ -37,8 +48,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88D0803323B9042E00A95752 /* OneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneButton.swift; sourceTree = "<group>"; };
+		88D0803523B904B300A95752 /* TwoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButton.swift; sourceTree = "<group>"; };
+		88D0803723B904CC00A95752 /* ThreeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeButton.swift; sourceTree = "<group>"; };
+		88D0803923B904F600A95752 /* FourButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourButton.swift; sourceTree = "<group>"; };
+		88D0803B23B9055D00A95752 /* FiveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveButton.swift; sourceTree = "<group>"; };
+		88D0803D23B9057900A95752 /* SixButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixButton.swift; sourceTree = "<group>"; };
+		88D0803F23B9059100A95752 /* SevenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenButton.swift; sourceTree = "<group>"; };
+		88D0804123B905A800A95752 /* EightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightButton.swift; sourceTree = "<group>"; };
+		88D0804323B905BA00A95752 /* NineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineButton.swift; sourceTree = "<group>"; };
+		88D0804523B905D800A95752 /* StarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarButton.swift; sourceTree = "<group>"; };
+		88D0804723B905F200A95752 /* ZeroButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroButton.swift; sourceTree = "<group>"; };
+		88D0804923B9060400A95752 /* SharpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpButton.swift; sourceTree = "<group>"; };
 		88D3D34923B59322009002E8 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
-		88D3D34B23B5A3F7009002E8 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		88DC04C923B4A45100353D2C /* Force_Password_Step_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Force_Password_Step_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DC04CC23B4A45100353D2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88DC04CE23B4A45100353D2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,7 +133,18 @@
 				88DC04D523B4A45200353D2C /* Assets.xcassets */,
 				88DC04D723B4A45200353D2C /* LaunchScreen.storyboard */,
 				88DC04DA23B4A45200353D2C /* Info.plist */,
-				88D3D34B23B5A3F7009002E8 /* Button.swift */,
+				88D0803323B9042E00A95752 /* OneButton.swift */,
+				88D0803523B904B300A95752 /* TwoButton.swift */,
+				88D0803723B904CC00A95752 /* ThreeButton.swift */,
+				88D0803923B904F600A95752 /* FourButton.swift */,
+				88D0803B23B9055D00A95752 /* FiveButton.swift */,
+				88D0803D23B9057900A95752 /* SixButton.swift */,
+				88D0803F23B9059100A95752 /* SevenButton.swift */,
+				88D0804123B905A800A95752 /* EightButton.swift */,
+				88D0804323B905BA00A95752 /* NineButton.swift */,
+				88D0804523B905D800A95752 /* StarButton.swift */,
+				88D0804723B905F200A95752 /* ZeroButton.swift */,
+				88D0804923B9060400A95752 /* SharpButton.swift */,
 			);
 			path = Force_Password_Step_1;
 			sourceTree = "<group>";
@@ -265,10 +298,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88D3D34C23B5A3F7009002E8 /* Button.swift in Sources */,
+				88D0804623B905D800A95752 /* StarButton.swift in Sources */,
+				88D0803823B904CC00A95752 /* ThreeButton.swift in Sources */,
+				88D0804023B9059100A95752 /* SevenButton.swift in Sources */,
+				88D0804223B905A800A95752 /* EightButton.swift in Sources */,
+				88D0803C23B9055D00A95752 /* FiveButton.swift in Sources */,
 				88DC04D123B4A45100353D2C /* ViewController.swift in Sources */,
+				88D0804A23B9060400A95752 /* SharpButton.swift in Sources */,
+				88D0804823B905F200A95752 /* ZeroButton.swift in Sources */,
+				88D0803623B904B300A95752 /* TwoButton.swift in Sources */,
+				88D0803423B9042E00A95752 /* OneButton.swift in Sources */,
 				88D3D34A23B59322009002E8 /* ViewController2.swift in Sources */,
 				88DC04CD23B4A45100353D2C /* AppDelegate.swift in Sources */,
+				88D0803E23B9057900A95752 /* SixButton.swift in Sources */,
+				88D0804423B905BA00A95752 /* NineButton.swift in Sources */,
+				88D0803A23B904F600A95752 /* FourButton.swift in Sources */,
 				88DC04CF23B4A45100353D2C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

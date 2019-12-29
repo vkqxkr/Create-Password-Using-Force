@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var SubjectName_TextField: UITextField!
     @IBOutlet weak var InputCount_TextField: UITextField!
@@ -22,17 +22,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         SubjectName_TextField.returnKeyType = .done
-        self.SubjectName_TextField.delegate = self as? UITextFieldDelegate
+        self.SubjectName_TextField.delegate = self
         InputCount_TextField.returnKeyType = .done
-        self.InputCount_TextField.delegate = self as? UITextFieldDelegate
+        self.InputCount_TextField.delegate = self
         StayTime_TextField.returnKeyType = .done
-        self.StayTime_TextField.delegate = self as? UITextFieldDelegate
-    }
-    
-    @IBAction func StartExperiment_Func_StartExperiment_Button(_ sender: UIButton) {
-        if SubjectName_String.count > 0 && SubjectName_String.trimmingCharacters(in: .whitespaces).isEmpty && InputCount_String.count > 0 && InputCount_String.trimmingCharacters(in: .whitespaces).isEmpty && StayTime_String.count > 0 && StayTime_String.trimmingCharacters(in: .whitespaces).isEmpty{
-            self.performSegue(withIdentifier: "Main_to_Experiment", sender: SubjectName_String + "_" + InputCount_String + "_" + StayTime_String)
-        }
+        self.StayTime_TextField.delegate = self
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -41,6 +35,12 @@ class ViewController: UIViewController {
         InputCount_String = InputCount_TextField.text ?? ""
         StayTime_String = StayTime_TextField.text ?? ""
         return false
+    }
+    
+    @IBAction func StartExperiment_Func_StartExperiment_Button(_ sender: UIButton) {
+        if SubjectName_String.count > 0 && SubjectName_String.trimmingCharacters(in: .whitespaces).isEmpty && InputCount_String.count > 0 && InputCount_String.trimmingCharacters(in: .whitespaces).isEmpty && StayTime_String.count > 0 && StayTime_String.trimmingCharacters(in: .whitespaces).isEmpty{
+            self.performSegue(withIdentifier: "Main_to_Experiment", sender: SubjectName_String + "_" + InputCount_String + "_" + StayTime_String)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

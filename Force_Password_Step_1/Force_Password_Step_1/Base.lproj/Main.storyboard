@@ -98,7 +98,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIk-i5-RW3">
-                                <rect key="frame" x="274" y="149" width="19" height="36"/>
+                                <rect key="frame" x="274" y="149" width="85" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -112,107 +112,155 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AM-zO-uGC">
-                                <rect key="frame" x="274" y="281" width="19" height="36"/>
+                                <rect key="frame" x="274" y="281" width="85" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsh-96-kyO" customClass="Button" customModule="Force_Password_Step_1" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsh-96-kyO" customClass="OneButton" customModule="Force_Password_Step_1" customModuleProvider="target">
                                 <rect key="frame" x="16" y="372" width="100" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="EndOneButton_Func:" destination="FqZ-ls-fYr" eventType="touchUpInside" id="yJA-qM-bas"/>
+                                    <action selector="StartOneButton_Func:" destination="FqZ-ls-fYr" eventType="touchDragInside" id="E3Z-4t-rbS"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xee-qx-0Tl" customClass="Button" customModule="Force_Password_Step_1" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xee-qx-0Tl" customClass="TwoButton" customModule="Force_Password_Step_1" customModuleProvider="target">
                                 <rect key="frame" x="137" y="372" width="100" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="2">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="EndTwoButton_Func:" destination="FqZ-ls-fYr" eventType="touchUpInside" id="mri-EO-NA0"/>
+                                    <action selector="StartTwoButton_Func:" destination="FqZ-ls-fYr" eventType="touchDragInside" id="muw-rL-pf2"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wI-4e-Yjg" customClass="Button" customModule="Force_Password_Step_1" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wI-4e-Yjg" customClass="ThreeButton" customModule="Force_Password_Step_1" customModuleProvider="target">
                                 <rect key="frame" x="259" y="372" width="100" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="3">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="EndThreeButton_Func:" destination="FqZ-ls-fYr" eventType="touchUpInside" id="aiR-2b-TZo"/>
+                                    <action selector="StartThreeButton_Func:" destination="FqZ-ls-fYr" eventType="touchDragInside" id="jox-P5-07Q"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9w-LB-sdO" customClass="Button" customModule="Force_Password_Step_1" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9w-LB-sdO" customClass="FourButton" customModule="Force_Password_Step_1" customModuleProvider="target">
                                 <rect key="frame" x="16" y="468" width="100" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="4">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="EndFourButton_Func:" destination="FqZ-ls-fYr" eventType="touchUpInside" id="Vsx-yq-dJh"/>
+                                    <action selector="StartFourButton_Func:" destination="FqZ-ls-fYr" eventType="touchDragInside" id="Px0-kZ-Udl"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iut-nk-6H9" customClass="Button" customModule="Force_Password_Step_1" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iut-nk-6H9" customClass="FiveButton" customModule="Force_Password_Step_1" customModuleProvider="target">
                                 <rect key="frame" x="137" y="468" width="100" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="5">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="EndFiveButton_Func:" destination="FqZ-ls-fYr" eventType="touchUpInside" id="APx-OE-uhI"/>
+                                    <action selector="StartFiveButton_Func:" destination="FqZ-ls-fYr" eventType="touchDragInside" id="yGM-lg-WzN"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgc-Ej-5iY" customClass="Button" customModule="Force_Password_Step_1" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgc-Ej-5iY" customClass="SixButton" customModule="Force_Password_Step_1" customModuleProvider="target">
                                 <rect key="frame" x="259" y="468" width="100" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="6">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="EndSixButton_Func:" destination="FqZ-ls-fYr" eventType="touchUpInside" id="AQm-ni-asB"/>
+                                    <action selector="StartSixButton_Func:" destination="FqZ-ls-fYr" eventType="touchDragInside" id="Axc-yi-TGZ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYg-Cr-rAO" customClass="Button" customModule="Force_Password_Step_1" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYg-Cr-rAO" customClass="SevenButton" customModule="Force_Password_Step_1" customModuleProvider="target">
                                 <rect key="frame" x="16" y="564" width="100" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="7">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="EndSevenButton_Func:" destination="FqZ-ls-fYr" eventType="touchUpInside" id="Sl2-gO-KD2"/>
+                                    <action selector="StartSevenButton_Func:" destination="FqZ-ls-fYr" eventType="touchDragInside" id="heb-EZ-7zt"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yL7-jA-K9c" customClass="Button" customModule="Force_Password_Step_1" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yL7-jA-K9c" customClass="EightButton" customModule="Force_Password_Step_1" customModuleProvider="target">
                                 <rect key="frame" x="137" y="564" width="100" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="8">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="EndEightButton_Func:" destination="FqZ-ls-fYr" eventType="touchUpInside" id="vjC-Zf-1RN"/>
+                                    <action selector="StartEightButton_Func:" destination="FqZ-ls-fYr" eventType="touchDragInside" id="ey9-XP-F4e"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPy-I6-9EI" customClass="Button" customModule="Force_Password_Step_1" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPy-I6-9EI" customClass="NineButton" customModule="Force_Password_Step_1" customModuleProvider="target">
                                 <rect key="frame" x="259" y="564" width="100" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="9">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="EndNineButton_Func:" destination="FqZ-ls-fYr" eventType="touchUpInside" id="r3z-Ph-NNW"/>
+                                    <action selector="StartNineButton_Func:" destination="FqZ-ls-fYr" eventType="touchDragInside" id="nDE-BJ-Dpc"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZa-YH-IO9" customClass="Button" customModule="Force_Password_Step_1" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZa-YH-IO9" customClass="StarButton" customModule="Force_Password_Step_1" customModuleProvider="target">
                                 <rect key="frame" x="16" y="660" width="100" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="*">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="EndStarButton_Func:" destination="FqZ-ls-fYr" eventType="touchUpInside" id="Ueh-vP-taK"/>
+                                    <action selector="StartStarButton_Func:" destination="FqZ-ls-fYr" eventType="touchDragInside" id="g5I-4p-zut"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H43-NO-TPs" customClass="Button" customModule="Force_Password_Step_1" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H43-NO-TPs" customClass="ZeroButton" customModule="Force_Password_Step_1" customModuleProvider="target">
                                 <rect key="frame" x="137" y="660" width="100" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="0">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="EndZeroButton_Func:" destination="FqZ-ls-fYr" eventType="touchUpInside" id="Ecp-oQ-dxv"/>
+                                    <action selector="StartZeroButton_Func:" destination="FqZ-ls-fYr" eventType="touchDragInside" id="s06-h0-eDU"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tK-y2-JpR" customClass="Button" customModule="Force_Password_Step_1" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tK-y2-JpR" customClass="SharpButton" customModule="Force_Password_Step_1" customModuleProvider="target">
                                 <rect key="frame" x="259" y="660" width="100" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="#">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="EndSharpButton_Func:" destination="FqZ-ls-fYr" eventType="touchUpInside" id="tD2-LW-GEk"/>
+                                    <action selector="StartSharpButton_Func:" destination="FqZ-ls-fYr" eventType="touchDragInside" id="Ush-g8-4Su"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="설정 유지 시간 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agn-q0-0nn">
                                 <rect key="frame" x="82" y="215" width="184" height="36"/>
@@ -222,7 +270,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHZ-if-B7V">
-                                <rect key="frame" x="274" y="215" width="40" height="36"/>
+                                <rect key="frame" x="274" y="215" width="85" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -235,20 +283,20 @@
                     <navigationItem key="navigationItem" id="BIE-bQ-Obs"/>
                     <connections>
                         <outlet property="CurrentInputCount_Label" destination="0AM-zO-uGC" id="6og-37-0wp"/>
-                        <outlet property="Eight_Button" destination="yL7-jA-K9c" id="zpw-39-FNb"/>
-                        <outlet property="FIve_Button" destination="iut-nk-6H9" id="gjK-tc-dLT"/>
-                        <outlet property="Four_Button" destination="v9w-LB-sdO" id="NBJ-It-J4a"/>
-                        <outlet property="Nine_Button" destination="dPy-I6-9EI" id="CU7-Pt-MnW"/>
-                        <outlet property="One_Button" destination="Dsh-96-kyO" id="57s-ZX-lOo"/>
+                        <outlet property="Eight_Button" destination="yL7-jA-K9c" id="Bbm-Zm-zrn"/>
+                        <outlet property="Five_Button" destination="iut-nk-6H9" id="bcm-vL-V3M"/>
+                        <outlet property="Four_Button" destination="v9w-LB-sdO" id="a7q-3Z-0XE"/>
+                        <outlet property="Nine_Button" destination="dPy-I6-9EI" id="4Vi-BV-b64"/>
+                        <outlet property="One_Button" destination="Dsh-96-kyO" id="scj-Ti-Ugx"/>
                         <outlet property="PreviousInputCount_Label" destination="tIk-i5-RW3" id="1On-gX-f5t"/>
                         <outlet property="PreviousStayTime_Label" destination="BHZ-if-B7V" id="0RC-nt-3v5"/>
-                        <outlet property="Seven_Button" destination="cYg-Cr-rAO" id="57g-JR-SKU"/>
-                        <outlet property="Sharp_Button" destination="3tK-y2-JpR" id="vDI-43-UOD"/>
-                        <outlet property="Six_Button" destination="dgc-Ej-5iY" id="0hf-nw-ENT"/>
-                        <outlet property="Star_Button" destination="xZa-YH-IO9" id="RWH-Fa-2Ue"/>
-                        <outlet property="Three_Button" destination="9wI-4e-Yjg" id="Ddc-3I-O1d"/>
-                        <outlet property="Two_Button" destination="Xee-qx-0Tl" id="Duz-Rt-cD7"/>
-                        <outlet property="Zero_Button" destination="H43-NO-TPs" id="GUr-du-f9v"/>
+                        <outlet property="Seven_Button" destination="cYg-Cr-rAO" id="Jq3-ae-vU2"/>
+                        <outlet property="Sharp_Button" destination="3tK-y2-JpR" id="Lq1-OG-CS9"/>
+                        <outlet property="Six_Button" destination="dgc-Ej-5iY" id="yUP-M6-3T7"/>
+                        <outlet property="Star_Button" destination="xZa-YH-IO9" id="wXf-TE-h9q"/>
+                        <outlet property="Three_Button" destination="9wI-4e-Yjg" id="g7Z-Gz-V9P"/>
+                        <outlet property="Two_Button" destination="Xee-qx-0Tl" id="ATg-7I-zPu"/>
+                        <outlet property="Zero_Button" destination="H43-NO-TPs" id="UOc-hZ-AW4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23P-2t-p9Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
