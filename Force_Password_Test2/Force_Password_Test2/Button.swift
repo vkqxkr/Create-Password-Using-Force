@@ -12,7 +12,7 @@ class Button: UIButton {
     var ForceValues_String: String = ""
     
     required init(coder aDecoder: NSCoder){ super.init(coder: aDecoder)!
-        self.layer.cornerRadius = 5.0
+        self.layer.cornerRadius = self.layer.frame.size.width/2
         self.backgroundColor = UIColor.gray
     }
     
