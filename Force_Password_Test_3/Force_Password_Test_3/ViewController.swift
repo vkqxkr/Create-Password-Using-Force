@@ -8,13 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var SubjectName: UITextField!
+    
+    var SubjectName_String: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        SubjectName.returnKeyType = .done
+        self.SubjectName.delegate = self
     }
-
-
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        SubjectName_String = SubjectName.text ?? ""
+        return false
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "Main_to_Experiment" {
+        let secondViewController = segue.destination as! ExperimentViewController
+        secondViewController.SubjectName_String = SubjectName_String
+        }
+    }
 }
 

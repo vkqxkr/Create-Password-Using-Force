@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-903" y="32"/>
         </scene>
-        <!--View Controller-->
+        <!--Experiment View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Force_Password_Test_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ExperimentViewController" customModule="Force_Password_Test_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,108 +38,199 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pAA-Sc-CVf">
-                                <rect key="frame" x="12" y="213" width="390" height="300"/>
+                                <rect key="frame" x="12" y="243" width="390" height="400"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfI-ZM-ReI">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej2-pr-whQ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej2-pr-whQ" customClass="Button" customModule="Force_Password_Test_3" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="1oS-ag-qRG"/>
                                                     <constraint firstAttribute="height" constant="100" id="9kL-LR-W6A"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="EndTouch1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yZO-qX-LlG"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2n-wf-BUV">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2n-wf-BUV" customClass="Button" customModule="Force_Password_Test_3" customModuleProvider="target">
                                                 <rect key="frame" x="130" y="0.0" width="130" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="9n4-7J-rQH"/>
                                                     <constraint firstAttribute="height" constant="100" id="zTp-iK-U2U"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="EndTouch2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Prk-tc-1ER"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aac-ri-lX4">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aac-ri-lX4" customClass="Button" customModule="Force_Password_Test_3" customModuleProvider="target">
                                                 <rect key="frame" x="260" y="0.0" width="130" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="fcH-6y-QRM"/>
                                                     <constraint firstAttribute="height" constant="100" id="xTN-bR-smX"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="EndTouch3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ax1-EY-dMA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDP-bx-yx1">
                                         <rect key="frame" x="0.0" y="100" width="390" height="100"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWk-Vn-iQF">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWk-Vn-iQF" customClass="Button" customModule="Force_Password_Test_3" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="D1p-mx-eFh"/>
                                                     <constraint firstAttribute="height" constant="100" id="N1W-ZG-bK1"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="EndTouch4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gti-31-em5"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEF-Rt-HIi">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEF-Rt-HIi" customClass="Button" customModule="Force_Password_Test_3" customModuleProvider="target">
                                                 <rect key="frame" x="130" y="0.0" width="130" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="Gdj-Hd-AHB"/>
                                                     <constraint firstAttribute="width" constant="130" id="Seq-tI-2fY"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="EndTouch5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ots-8z-oqD"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bo-Mi-TdQ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bo-Mi-TdQ" customClass="Button" customModule="Force_Password_Test_3" customModuleProvider="target">
                                                 <rect key="frame" x="260" y="0.0" width="130" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="mjH-WA-455"/>
                                                     <constraint firstAttribute="width" constant="130" id="zAF-Rd-Def"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="EndTouch6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UGU-tA-Ewz"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7D-1S-iIT">
                                         <rect key="frame" x="0.0" y="200" width="390" height="100"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPX-wl-fu6">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPX-wl-fu6" customClass="Button" customModule="Force_Password_Test_3" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="Hsl-Ve-0pj"/>
                                                     <constraint firstAttribute="height" constant="100" id="sYT-jY-4Pz"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="EndTouch7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="joJ-up-DjM"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZ8-jX-rB2">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZ8-jX-rB2" customClass="Button" customModule="Force_Password_Test_3" customModuleProvider="target">
                                                 <rect key="frame" x="130" y="0.0" width="130" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="i53-PK-UZg"/>
                                                     <constraint firstAttribute="height" constant="100" id="rC8-aN-reg"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="EndTouch8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7bO-En-Nlz"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8u-fr-IgH">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8u-fr-IgH" customClass="Button" customModule="Force_Password_Test_3" customModuleProvider="target">
                                                 <rect key="frame" x="260" y="0.0" width="130" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="CJF-1H-n7Y"/>
                                                     <constraint firstAttribute="height" constant="100" id="ChD-zI-23b"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="EndTouch9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cvc-4n-Ylb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="473-ZK-NzG">
+                                        <rect key="frame" x="0.0" y="300" width="390" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4U-FT-2kn" customClass="Button" customModule="Force_Password_Test_3" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="nJC-dq-b4z"/>
+                                                    <constraint firstAttribute="width" constant="130" id="tKk-nd-kbM"/>
+                                                </constraints>
+                                                <state key="normal" title="*"/>
+                                                <connections>
+                                                    <action selector="EndTouchstar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nu8-V5-Rih"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5q-jj-um2" customClass="Button" customModule="Force_Password_Test_3" customModuleProvider="target">
+                                                <rect key="frame" x="130" y="0.0" width="130" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="130" id="eYs-Gl-UKl"/>
+                                                    <constraint firstAttribute="height" constant="100" id="y78-qp-TJa"/>
+                                                </constraints>
+                                                <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="EndTouch0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pI5-7h-6eZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2f-PO-ea0" customClass="Button" customModule="Force_Password_Test_3" customModuleProvider="target">
+                                                <rect key="frame" x="260" y="0.0" width="130" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="pVi-XW-pvO"/>
+                                                    <constraint firstAttribute="width" constant="130" id="zuj-7K-ePL"/>
+                                                </constraints>
+                                                <state key="normal" title="#"/>
+                                                <connections>
+                                                    <action selector="EndTouchsharp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LXm-8w-9UX"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="081-Mt-MVs">
+                                <rect key="frame" x="181" y="754" width="52" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="저장"/>
+                                <connections>
+                                    <action selector="SaveValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="edB-wB-Z8X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="081-Mt-MVs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2F6-HQ-ft2"/>
                             <constraint firstItem="F5B-iV-8aR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7fS-YZ-tkH"/>
-                            <constraint firstItem="pAA-Sc-CVf" firstAttribute="top" secondItem="F5B-iV-8aR" secondAttribute="bottom" constant="40" id="hJy-36-xhZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="081-Mt-MVs" secondAttribute="bottom" constant="60" id="aVj-Mv-ASn"/>
+                            <constraint firstItem="pAA-Sc-CVf" firstAttribute="top" secondItem="F5B-iV-8aR" secondAttribute="bottom" constant="70" id="hJy-36-xhZ"/>
                             <constraint firstItem="F5B-iV-8aR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="kVA-KO-M5Q"/>
                             <constraint firstItem="pAA-Sc-CVf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yCW-KM-JJ3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mmv-RU-BCP"/>
+                    <connections>
+                        <outlet property="Button0" destination="y5q-jj-um2" id="5qL-yb-BPU"/>
+                        <outlet property="Button1" destination="Ej2-pr-whQ" id="X8e-36-ftx"/>
+                        <outlet property="Button2" destination="F2n-wf-BUV" id="opX-nr-GpM"/>
+                        <outlet property="Button3" destination="Aac-ri-lX4" id="sda-0P-ACL"/>
+                        <outlet property="Button4" destination="VWk-Vn-iQF" id="Z6x-yF-iC4"/>
+                        <outlet property="Button5" destination="FEF-Rt-HIi" id="5V1-rP-wqL"/>
+                        <outlet property="Button6" destination="2Bo-Mi-TdQ" id="saM-dF-HMJ"/>
+                        <outlet property="Button7" destination="qPX-wl-fu6" id="7Pw-rp-Tte"/>
+                        <outlet property="Button8" destination="NZ8-jX-rB2" id="CgA-ca-PcG"/>
+                        <outlet property="Button9" destination="z8u-fr-IgH" id="Fi9-wM-mUm"/>
+                        <outlet property="Buttonsharp" destination="p2f-PO-ea0" id="MDi-WL-01r"/>
+                        <outlet property="Buttonstar" destination="B4U-FT-2kn" id="DxN-bh-k2w"/>
+                        <outlet property="SaveButton" destination="081-Mt-MVs" id="Tiu-r8-JIi"/>
+                        <outlet property="SubjectName" destination="F5B-iV-8aR" id="9jZ-NI-ClL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,7 +265,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="실험 시작"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="W0t-yj-ia7"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="Main_to_Experiment" id="W0t-yj-ia7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -191,8 +282,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ls5-Z3-iFu"/>
                     <connections>
-                        <outlet property="StartExperiment" destination="pqo-pS-q5A" id="OCD-Sn-Pat"/>
-                        <outlet property="SubjectName" destination="fNL-OR-JN8" id="Tmf-at-dKP"/>
+                        <outlet property="SubjectName" destination="fNL-OR-JN8" id="zXs-j3-PC3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hO5-jV-jP5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
