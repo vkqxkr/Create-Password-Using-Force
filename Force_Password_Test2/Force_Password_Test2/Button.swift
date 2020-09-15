@@ -19,6 +19,7 @@ class Button: UIButton {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         self.backgroundColor = UIColor.green
+        self.setTitleColor(UIColor.green, for: .normal)
         ForceValues_String = ""
         if let touch = touches.first {
             if #available(iOS 9.0, *) {
